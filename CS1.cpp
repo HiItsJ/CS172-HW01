@@ -12,7 +12,13 @@ int main(){
     void ex02(){
         
         bool hasPassedTest = true;
-        int 
+        int x = rand() % 100;
+        int y = rand() % 100;
+        
+        if (x > 7){
+            cout<<"x is greater than y.";
+        }
+        
         
     }
 }
