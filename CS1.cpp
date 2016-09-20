@@ -14,11 +14,13 @@ using namespace std;
 
 void ex02();
 void ex03();
+void ex04();
 
 int main(){
     srand(time(NULL));
     ex02();
     ex03();
+    ex04();
 }
 
 void ex02(){
@@ -91,6 +93,32 @@ void ex03(){
     }
     if (input6=='n'){
         cout<<"You chose NO! You're wrong, but ok.";
+    }
+}
+
+void ex04(){
+    int input7;
+    while(true){
+        cout<<"\nEnter a number between 1 and 10: ";
+        cin>>input7;
+        if (input7>1 && input7<10){
+            cout<<"Good Job!";
+            break;
+        }
+        else {
+            cout<<"Try again.";
+        }
+    }
+    int cubeSum = 0;
+    for (int x=0;x<input7+1;x++){
+        cubeSum = cubeSum+pow(x,3);
+    }
+    cout<<"\nThe sum of the cubes from 1 to "<<input7<<" is "<<cubeSum<<"\n";
+    cout<<"Here are the even numbers from 0 to 40: ";
+    for (int x=0;x<41;x++){
+        if (x%2==0){
+            cout<<x<<" ";
+        }
     }
 }
 
