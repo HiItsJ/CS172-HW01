@@ -8,14 +8,19 @@
 
 #include "CS1.hpp"
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
 void ex02();
+void ex03();
+
 int main(){
     srand(time(NULL));
     ex02();
+    ex03();
 }
+
 void ex02(){
     
     bool hasPassedTest = true;
@@ -70,3 +75,28 @@ void ex02(){
         cout<<"The shelf life of the box of chocolate remained at "<<input3<<" because it is not greater than 90 degrees outside.\n";
     }
 }
+
+void ex03(){
+    int input5;
+    double value1;
+    cout<<"\nEnter the area of a square: ";
+    cin>>input5;
+    value1 = pow(input5+input5,0.5);
+    cout<<"The length of the diagonal of the square with area "<<input5<<" is "<<value1;
+    char input6;
+    cout<<"\nIs Josiah super cool? Enter \"y\" for yes or \"n\" for no (HINT: The answer is yes): ";
+    cin>>input6;
+    if (input6=='y'){
+        cout<<"You chose YES! Of course he is!";
+    }
+    if (input6=='n'){
+        cout<<"You chose NO! You're wrong, but ok.";
+    }
+}
+
+
+
+
+
+
+
